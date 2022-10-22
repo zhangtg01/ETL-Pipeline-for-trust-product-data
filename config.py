@@ -3,26 +3,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_FILE = os.path.join(os.path.join(BASE_DIR, 'logs'), 'crawl_trust.log')
 
-# 正式库
-db_server = 'contentdb.crkldnwly6ki.rds.cn-north-1.amazonaws.com.cn'
-username = 'datalab_dev'
-password = 'datalabgogo'
-dbname = 'esg_analytics'
-db_port = '3306'
-
-# 测试库
-# db_server = 'datalab-contentdb-dev.crkldnwly6ki.rds.cn-north-1.amazonaws.com.cn'
-# db_port = '3306'
-# username = 'dev'
-# password = 'datalabgogo'
-# dbname = 'analytics_master_data'
-
-proxyHost = "http-dyn.abuyun.com"
-proxyPort = "9020"
-
-# 代理隧道验证信息
-proxyUser = "HUO16687XT926TAD"
-proxyPass = "AFAFEBAA0D0B06F7"
 
 proxyMeta = "http://%(user)s:%(pass)s@%(host)s:%(port)s" % {
     "host": proxyHost,
